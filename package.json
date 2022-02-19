@@ -1,0 +1,24 @@
+{
+  "name": "Baku-NoteBook-Front-End",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass":"node-sass assets/scss/main.scss assets/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephguluzada/Baku-NoteBook-Front-End.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephguluzada/Baku-NoteBook-Front-End/issues"
+  },
+  "homepage": "https://github.com/josephguluzada/Baku-NoteBook-Front-End#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "node-sass": "^7.0.1"
+  }
+}

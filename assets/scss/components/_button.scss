@@ -1,0 +1,14 @@
+.button {
+  color: $color-white;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+
+  &--primary {
+    background-color: $color-primary;
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+  }
+}

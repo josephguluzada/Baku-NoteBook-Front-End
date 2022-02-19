@@ -1,0 +1,12 @@
+html {
+  font-size: 62.5%; }
+
+.button {
+  color: #fff;
+  font-size: 1.6rem;
+  border: none;
+  outline: none; }
+  .button--primary {
+    background-color: black; }
+  .button--secondary {
+    background-color: grey; }
