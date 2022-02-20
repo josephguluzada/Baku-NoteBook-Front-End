@@ -1,10 +1,11 @@
 {
-  "name": "Baku-NoteBook-Front-End",
+  "name": "baku-notebook-front-end",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass":"node-sass assets/scss/main.scss assets/css/style.css -w"
+    "watch:sass":"node-sass ./assets/scss/main.scss ./assets/css/style.css -w",
+    "start": "npm-run-all --parallel watch:sass"
   },
   "repository": {
     "type": "git",

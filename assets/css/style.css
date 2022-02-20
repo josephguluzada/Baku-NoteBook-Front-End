@@ -5,7 +5,10 @@ html {
   color: #fff;
   font-size: 1.6rem;
   border: none;
-  outline: none; }
+  border-radius: 0.2rem;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 2rem; }
   .button--primary {
     background-color: black; }
   .button--secondary {
