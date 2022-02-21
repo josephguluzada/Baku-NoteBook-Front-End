@@ -27,7 +27,7 @@
 
         .button {
           padding: 0.3rem 0.6rem 0.2rem;
-          margin-right: 4px;
+          margin-right: 0.4rem;
           vertical-align: top;
           color: $color-black;
 
@@ -55,6 +55,7 @@
     padding: 0.1rem 1rem;
     a:hover {
       text-decoration: underline;
+      color: black;
     }
   }
   .header-top-bottom-border {
@@ -63,8 +64,46 @@
     left: 0;
     width: 100%;
     height: 3.5rem;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 0.1rem solid $color-border;
     box-shadow: none;
     z-index: -1;
+  }
+
+  .header-bottom {
+    position: relative;
+    max-width: 124.8rem;
+    min-width: 32.4rem;
+    margin: 0 auto;
+    border-bottom: 0.1rem solid #e5e5e5;
+    .container {
+      max-width: 124.8rem !important;
+
+      .row {
+        img {
+          max-width: 80%;
+          width: 75%;
+          padding-left: 2rem;
+        }
+
+        input {
+          width: 100%;
+          height: 100%;
+          border: 0.2rem solid rgb(53, 53, 53);
+          font-size: 1.7rem;
+          text-align: left;
+          padding-left: 2rem;
+        }
+
+        .button.button--primary {
+          width: 100%;
+          height: 100%;
+          transition: background-color 0.4s ease;
+
+          &:hover {
+            background-color: $color-link;
+          }
+        }
+      }
+    }
   }
 }
