@@ -112,3 +112,60 @@ ul {
     background-color: #0a68e4; }
   .button--secondary {
     background-color: grey; }
+
+main .slider {
+  padding: 2rem 0; }
+  main .slider .container {
+    /* Caption text */
+    /* Number text (1/3 etc) */
+    /* The dots/bullets/indicators */
+    /* Fading animation */
+    /* On smaller screens, decrease text size */ }
+    main .slider .container .slideshow-container {
+      max-width: 123rem;
+      position: relative;
+      margin: auto; }
+    main .slider .container .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center; }
+    main .slider .container .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0; }
+    main .slider .container .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease; }
+    main .slider .container .active {
+      background-color: #717171; }
+    main .slider .container .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 4s;
+      animation-name: fade;
+      animation-duration: 4s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+    @media only screen and (max-width: 300px) {
+      main .slider .container .text {
+        font-size: 11px; } }
