@@ -20,6 +20,9 @@ a {
 ul {
   list-style-type: none; }
 
+.container {
+  max-width: 123rem; }
+
 .header {
   max-width: 124.8rem;
   min-width: 32.4rem;
@@ -113,6 +116,24 @@ ul {
   .button--secondary {
     background-color: grey; }
 
+.button-wide {
+  color: grey;
+  font-size: 1.6rem;
+  border: 1px solid #cfcfcf;
+  width: 100%;
+  height: 6rem;
+  border-radius: 0.6rem;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 2rem; }
+  .button-wide--primary {
+    background-color: #0a68e4; }
+  .button-wide--secondary {
+    background-color: grey; }
+  .button-wide--tertiary {
+    background-color: transparent; }
+
 main .slider {
   padding: 2rem 0; }
   main .slider .container {
@@ -169,3 +190,176 @@ main .slider {
     @media only screen and (max-width: 300px) {
       main .slider .container .text {
         font-size: 11px; } }
+
+main #bestSales .container .header-title {
+  letter-spacing: -0.4 0.8rem;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 600;
+  color: #171717;
+  margin-bottom: 2rem; }
+
+main #bestSales .container .sale-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 0.1rem solid #e5e5e5;
+  padding: 3rem 0; }
+  main #bestSales .container .sale-cards .sale-card {
+    box-sizing: border-box;
+    width: calc((100% / 10 * 3) - 0.75rem);
+    border: 0.1rem solid #d8d8d8;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    transition: border 0.2s linear, min-height 0.3s linear, border-bottom-left-radius 0.2s linear, border-bottom-right-radius 0.2s linear, box-shadow 0.2s linear; }
+    main #bestSales .container .sale-cards .sale-card .img-link {
+      text-align: center;
+      margin: auto;
+      padding: 5rem 0.5rem 0.5rem;
+      max-width: 100%;
+      box-sizing: border-box; }
+      main #bestSales .container .sale-cards .sale-card .img-link .img-size {
+        margin: auto;
+        width: 270px;
+        height: 270px;
+        max-width: 100%;
+        transition: transform 0.1s cubic-bezier(0.29, 0.04, 0.23, 1);
+        will-change: transform;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        pointer-events: none;
+        position: relative; }
+        main #bestSales .container .sale-cards .sale-card .img-link .img-size img {
+          position: absolute;
+          inset: 0px;
+          box-sizing: border-box;
+          padding: 0px;
+          border: none;
+          margin: auto;
+          display: block;
+          width: 0px;
+          height: 0px;
+          min-width: 100%;
+          max-width: 100%;
+          min-height: 100%;
+          max-height: 100%;
+          object-fit: contain; }
+    main #bestSales .container .sale-cards .sale-card .base-info {
+      padding-left: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.1s linear;
+      will-change: transform;
+      min-height: 10rem; }
+      main #bestSales .container .sale-cards .sale-card .base-info .info-url {
+        min-height: 4rem; }
+        main #bestSales .container .sale-cards .sale-card .base-info .info-url .info-div {
+          height: auto;
+          max-height: 4rem;
+          -webkit-line-clamp: 2;
+          line-height: 2rem;
+          width: initial; }
+          main #bestSales .container .sale-cards .sale-card .base-info .info-url .info-div span {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 4rem;
+            height: 4rem;
+            line-height: 1.8rem;
+            letter-spacing: -0.28px;
+            font-weight: 500;
+            color: #171717;
+            font-size: 1.4rem; }
+            main #bestSales .container .sale-cards .sale-card .base-info .info-url .info-div span:hover {
+              text-decoration: underline; }
+      main #bestSales .container .sale-cards .sale-card .base-info .price-sec {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; }
+        main #bestSales .container .sale-cards .sale-card .base-info .price-sec .price {
+          max-width: 50%;
+          width: auto;
+          font-family: Montserrat, Arial, Helvetica, sans-serif;
+          font-weight: 700;
+          color: #171717;
+          font-size: 2rem;
+          margin-bottom: 0.7rem;
+          display: flex;
+          align-items: center;
+          margin-top: 0.7rem;
+          height: 5rem;
+          flex-direction: column;
+          justify-content: center; }
+          main #bestSales .container .sale-cards .sale-card .base-info .price-sec .price .divider {
+            display: flex;
+            align-items: baseline;
+            position: relative;
+            font-weight: 700;
+            color: #171717;
+            font-size: 2rem; }
+            main #bestSales .container .sale-cards .sale-card .base-info .price-sec .price .divider .money {
+              display: flex;
+              align-items: baseline; }
+              main #bestSales .container .sale-cards .sale-card .base-info .price-sec .price .divider .money span {
+                color: #171717;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                letter-spacing: -0.36px; }
+            main #bestSales .container .sale-cards .sale-card .base-info .price-sec .price .divider svg {
+              min-width: 1.3rem;
+              width: 1.3rem;
+              height: 1.1rem;
+              min-height: 1.1rem;
+              transform: translateX(2px); }
+        main #bestSales .container .sale-cards .sale-card .base-info .price-sec .credit {
+          line-height: 1.8rem;
+          letter-spacing: -0.28px;
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: #171717;
+          border: 0.1rem solid #d8d8d8;
+          border-radius: 0.5rem;
+          min-height: 3rem;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.6rem 1.2rem;
+          margin-left: 3%;
+          box-sizing: border-box;
+          max-width: 19.8rem; }
+          main #bestSales .container .sale-cards .sale-card .base-info .price-sec .credit .credit-sec-border {
+            height: auto;
+            max-height: 3.6rem;
+            -webkit-line-clamp: 2;
+            line-height: 1.8rem;
+            width: initial; }
+            main #bestSales .container .sale-cards .sale-card .base-info .price-sec .credit .credit-sec-border span {
+              font-size: 1.2rem;
+              font-weight: 500;
+              color: #171717;
+              line-height: 1.7rem; }
+    main #bestSales .container .sale-cards .sale-card .order-btns .order-btn {
+      transition: all 0.3s ease; }
+      main #bestSales .container .sale-cards .sale-card .order-btns .order-btn .order-text {
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        main #bestSales .container .sale-cards .sale-card .order-btns .order-btn .order-text span {
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.7rem; }
+      main #bestSales .container .sale-cards .sale-card .order-btns .order-btn:hover {
+        background-color: #f54330;
+        border-color: #da2c18;
+        color: #fff; }
